@@ -1,6 +1,6 @@
 # PD Progression External Validation
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21612129.svg)](https://doi.org/10.5281/zenodo.21612129)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21612128.svg)](https://doi.org/10.5281/zenodo.21612128)
 Reproducible code and documentation for the development, internal validation, and independent external validation of a harmonized seven-predictor model for rapid motor progression in Parkinson's disease.
 
 ## Study design
