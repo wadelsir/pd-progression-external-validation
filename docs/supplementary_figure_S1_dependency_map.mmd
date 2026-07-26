@@ -1,0 +1,12 @@
+flowchart TD
+    A[PPMI controlled source tables] --> N01[Notebook 01: inventory]
+    N01 --> N02[Notebook 02: cohort and outcome]
+    N02 --> N03[Notebook 03: baseline predictors]
+    N03 --> N04[Notebook 04: split and preprocessing]
+    N04 --> E[Notebooks 05-15: exploratory internal analyses]
+    N04 --> N16[Notebook 16: locked 7-predictor PPMI model]
+    B[PDBP controlled source tables] --> H[Cross-cohort harmonization]
+    H --> N17[Notebook 17: independent external validation]
+    N16 --> N17
+    N16 --> N18[Notebook 18: final reporting package]
+    N17 --> N18

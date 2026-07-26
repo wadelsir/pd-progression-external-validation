@@ -1,0 +1,12 @@
+# Core analysis dependencies.
+# Replace this file with the exact `pip freeze` output from the final runtime
+# before publishing a versioned reproducibility release.
+numpy
+pandas
+scikit-learn
+matplotlib
+joblib
+python-docx
+PyYAML
+openpyxl
+jupyter

@@ -1,0 +1,78 @@
+project:
+  name: pd-progression-external-validation
+  random_state: 42
+  controlled_data_root: /secure/path/to/controlled_data
+  output_root: /secure/path/to/analysis_outputs
+
+data_sources:
+  ppmi:
+    manifest: config/ppmi_manifest_local.csv
+    participant_id_column: PATNO
+    baseline_visit: BL
+    primary_followup_visit: V06
+  pdbp:
+    manifest: config/pdbp_manifest_local.csv
+    participant_id_column: participant_id
+    amp_pd_release: amp-pd-research.2023_v4release_1027
+
+outcome:
+  score: MDS-UPDRS Part III total
+  rapid_progression_threshold_points_per_year: 5.0793
+  expected_v06_followup_years: 2.0
+  exam_state_priority:
+    - off
+    - untreated
+    - unmedicated
+    - standard_or_unspecified
+    - on
+    - unknown
+  primary_allowed_exam_states:
+    - off
+    - untreated
+    - unmedicated
+
+predictors:
+  numeric:
+    - ENROLL_AGE
+    - baseline_NP3TOT
+    - derived_years_since_PD_diagnosis
+    - part2_NP2PTOT
+    - part1_NP1RTOT
+    - moca_MCATOT
+  categorical:
+    - baseline_NHY
+
+preprocessing:
+  numeric_imputation: median
+  numeric_scaling: standard
+  categorical_imputation: most_frequent
+  categorical_encoding: one_hot
+  handle_unknown_categories: ignore
+
+internal_validation:
+  test_size: 0.20
+  stratified_split: true
+  cross_validation_folds: 5
+  shuffle_cross_validation: true
+  primary_ranking_metric: ROC_AUC
+  secondary_ranking_metric: PR_AUC
+
+final_model:
+  algorithm: logistic_regression
+  penalty: l2
+  C: 1.0
+  class_weight: balanced
+  solver: liblinear
+  max_iter: 5000
+  primary_probability_threshold: 0.50
+  secondary_locked_probability_threshold: 0.45
+
+external_validation:
+  cohort: PDBP
+  prediction_only: true
+  prohibit_retraining: true
+  prohibit_feature_reselection: true
+  prohibit_preprocessing_refit: true
+  prohibit_recalibration: true
+  prohibit_hyperparameter_tuning: true
+  prohibit_threshold_optimization: true

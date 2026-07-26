@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Please cite this software and the associated manuscript when using this repository."
+title: "PD Progression External Validation: Reproducible Analysis Repository"
+type: software
+version: 1.0.0
+date-released: 2026-07-26
+authors:
+  - family-names: "Elsir"
+    given-names: "Mohamed"
+    email: "wadelsirksa@gmail.com"
+repository-code: "https://github.com/REPLACE_WITH_ACCOUNT/pd-progression-external-validation"
+abstract: >-
+  Reproducible source code, configuration templates, harmonization metadata,
+  synthetic demonstration data, and documentation for the development and
+  independent external validation of a harmonized seven-predictor model for
+  rapid motor progression in Parkinson's disease.
+keywords:
+  - Parkinson's disease
+  - progression prediction
+  - machine learning
+  - external validation
+  - PPMI
+  - PDBP
+  - AMP-PD
+license: MIT

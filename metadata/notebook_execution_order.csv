@@ -1,0 +1,20 @@
+notebook,filename,stage,principal_output
+01,01_data_access_inventory.ipynb,Data access and variable inventory,Source-file and variable inventory
+02,02_cohort_outcome_construction.ipynb,Cohort definition and outcome construction,Eligible cohort and rapid-progression outcome
+03,03_predictor_inventory.ipynb,Baseline predictor table and missingness,Predictor matrix and missingness report
+04,04_preprocessing_split.ipynb,Preprocessing and split,Leakage-controlled train/test matrices and fitted preprocessor
+05,05_baseline_ml_internal_validation.ipynb,Baseline modelling,Candidate-model internal performance
+06,06_model_refinement_calibration.ipynb,"Refinement, calibration, and threshold screening","Tuned models, calibration, and threshold tables"
+07,07_datscan_inventory.ipynb,DaTSCAN/SBR verification,Imaging availability and overlap
+07b,07b_datscan_screening_features.ipynb,DaTSCAN/SBR screening features,Screening-time SBR matrix
+08,08_multimodal_preprocessing.ipynb,Multimodal integration and preprocessing,Clinical plus DaTSCAN matrices
+09,09_clinical_vs_multimodal.ipynb,Clinical versus multimodal comparison,Incremental imaging-value results
+10,10_biomarker_integration.ipynb,Biomarker verification and integration,Harmonized biomarker matrix
+11,11_biomarker_model_comparison.ipynb,Biomarker-integrated comparison,Biomarker incremental-value results
+12,12_final_internal_selection.ipynb,Final internal selection,Internal performance and decision table
+13,13_manuscript_tables_figures.ipynb,Exploratory manuscript reporting,"Tables, figures, and reporting checklist"
+14,14_manuscript_drafting.ipynb,Manuscript drafting package,"Draft text, captions, and limitations"
+15,15_full_manuscript_assembly.ipynb,Full manuscript assembly,Integrated draft and supplement structure
+16,16_harmonized_ppmi_model.ipynb,Locked seven-predictor PPMI model,Serialized primary and sensitivity pipelines
+17,17_pdbp_external_validation.ipynb,Independent PDBP external validation,"External predictions, metrics, calibration, and QC"
+18,18_manuscript_results_package.ipynb,Final reporting package,"Final tables, figures, generalization gap, and readiness checklist"

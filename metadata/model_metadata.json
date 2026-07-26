@@ -1,0 +1,75 @@
+{
+  "repository_version": "1.0.0",
+  "study_title": "Development and Independent External Validation of a Harmonized Seven-Predictor Machine Learning Model for Rapid Motor Progression in Parkinson's Disease",
+  "analysis_type": "prognostic prediction model development with independent external validation",
+  "random_state": 42,
+  "development_cohort": {
+    "name": "PPMI",
+    "n": 856,
+    "rapid_progressors": 215,
+    "rapid_progressor_percent": 25.12
+  },
+  "external_validation_cohort": {
+    "name": "PDBP",
+    "access_platform": "AMP-PD",
+    "release": "amp-pd-research.2023_v4release_1027",
+    "n": 349,
+    "rapid_progressors": 54,
+    "rapid_progressor_percent": 15.47
+  },
+  "outcome": {
+    "measure": "annualized MDS-UPDRS Part III change from baseline to V06",
+    "rapid_progression_threshold_points_per_year": 5.0793,
+    "threshold_source": "PPMI upper quartile",
+    "external_rule": "locked and applied unchanged to PDBP"
+  },
+  "predictors": [
+    "ENROLL_AGE",
+    "baseline_NP3TOT",
+    "derived_years_since_PD_diagnosis",
+    "part2_NP2PTOT",
+    "part1_NP1RTOT",
+    "moca_MCATOT",
+    "baseline_NHY"
+  ],
+  "preprocessing": {
+    "numeric": "training-median imputation followed by standardization",
+    "categorical": "training-mode imputation followed by one-hot encoding",
+    "fit_scope": "PPMI training subset only"
+  },
+  "selected_model": {
+    "algorithm": "LogisticRegression",
+    "penalty": "l2",
+    "C": 1.0,
+    "class_weight": "balanced",
+    "solver": "liblinear",
+    "max_iter": 5000,
+    "probability_threshold_primary": 0.5,
+    "probability_threshold_secondary_locked": 0.45,
+    "serialized_artifact": "not included in the public scaffold; add the approved joblib file only if permitted",
+    "full_coefficients": "not available in this scaffold; export from the locked fitted pipeline before release"
+  },
+  "internal_validation": {
+    "split": "80/20 stratified",
+    "cross_validation": "fivefold stratified, shuffled",
+    "selected_model_roc_auc": 0.5731,
+    "selected_model_pr_auc": 0.3243
+  },
+  "external_validation": {
+    "roc_auc": 0.5118,
+    "pr_auc": 0.1742,
+    "rules": [
+      "no retraining",
+      "no feature reselection",
+      "no preprocessing refitting",
+      "no recalibration",
+      "no hyperparameter tuning",
+      "no external threshold optimization"
+    ]
+  },
+  "software_environment": {
+    "status": "capture from the final runtime using scripts/capture_environment.py",
+    "exact_versions_included": false
+  },
+  "data_redistribution": "Raw controlled-access participant-level data and participant-level predictions are excluded from the public repository."
+}

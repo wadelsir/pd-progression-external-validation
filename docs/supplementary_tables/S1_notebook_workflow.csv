@@ -1,0 +1,20 @@
+Notebook,Analytical stage,Principal output
+01,Data access and variable inventory,Source-file and variable inventory
+02,Cohort definition and outcome construction,Eligible cohort and rapid-progression outcome
+03,Baseline predictor table and missingness,Predictor matrix and missingness report
+04,Preprocessing and split,Leakage-controlled train/test matrices and fitted preprocessor
+05,Baseline modelling,Candidate-model internal performance
+06,"Refinement, calibration, and threshold screening","Tuned models, calibration, and threshold tables"
+07,DaTSCAN/SBR verification,Imaging availability and overlap
+07b,DaTSCAN/SBR screening features,Screening-time SBR matrix
+08,Multimodal integration and preprocessing,Clinical plus DaTSCAN matrices
+09,Clinical versus multimodal comparison,Incremental imaging-value results
+10,Biomarker verification and integration,Harmonized biomarker matrix
+11,Biomarker-integrated comparison,Biomarker incremental-value results
+12,Final internal selection,Internal performance and decision table
+13,Exploratory manuscript reporting,"Tables, figures, and reporting checklist"
+14,Manuscript drafting package,"Draft text, captions, and limitations"
+15,Full manuscript assembly,Integrated draft and supplement structure
+16,Locked seven-predictor PPMI model,Serialized primary and sensitivity pipelines
+17,Independent PDBP external validation,"External predictions, metrics, calibration, and QC"
+18,Final reporting package,"Final tables, figures, generalization gap, and readiness checklist"

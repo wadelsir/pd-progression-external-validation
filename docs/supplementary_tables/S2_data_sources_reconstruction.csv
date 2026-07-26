@@ -1,0 +1,9 @@
+Characteristic,PPMI development/internal validation,PDBP external validation
+Study role,Model development and internal validation,Independent external validation only
+Access environment,PPMI/LONI controlled-access portal,AMP-PD controlled-access environment
+Release/version,Dataset-specific versions; record each source file,amp-pd-research.2023_v4release_1027
+Final analytic sample,856,349
+Rapid progressors,215 (25.12%),54 (15.47%)
+Outcome,"Annualized MDS-UPDRS Part III change, baseline to V06",Same harmonized outcome and locked threshold
+Model-development use,Yes,No
+Participant-level redistribution,Not permitted in this repository,Not permitted in this repository

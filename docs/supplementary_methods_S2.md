@@ -1,0 +1,5 @@
+# Supplementary Methods S2. Outcome construction and MDS-UPDRS Part III record-selection rules
+
+Duplicate participant–visit MDS-UPDRS Part III records were resolved using the following priority: OFF medication, untreated or unmedicated, standard or unspecified, ON medication, and unknown. Records were sorted by participant, visit, exam-state priority, assessment date, and record identifier, and the highest-priority non-missing total score was retained.
+
+The primary outcome required valid baseline and follow-up records under the prespecified OFF or untreated/unmedicated criteria. Candidate follow-ups included V04, V06, V08, V10, and V12; V06 was selected because it represented approximately two years of follow-up and supported the final PPMI cohort of 856 participants. Annualized change was calculated as the V06 minus baseline score divided by follow-up duration in years. Dates were used with 365.25 days per year; where valid dates were unavailable, the expected two-year V06 interval was used. The PPMI upper-quartile threshold was 5.0793 points/year and was transferred unchanged to PDBP.

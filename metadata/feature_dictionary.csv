@@ -1,0 +1,8 @@
+predictor,definition,role,type,unit_or_scale,preprocessing,allowed_missingness,notes
+ENROLL_AGE,Age at baseline,primary predictor,numeric,years,PPMI-training median imputation and standardization,Handled by locked PPMI preprocessing pipeline,Use age at the baseline assessment
+baseline_NP3TOT,Baseline motor severity,primary predictor,numeric,MDS-UPDRS Part III points,PPMI-training median imputation and standardization,Handled by locked PPMI preprocessing pipeline,Select one baseline record using the predefined exam-state hierarchy
+derived_years_since_PD_diagnosis,Years since Parkinson's disease diagnosis,primary predictor,numeric,years,PPMI-training median imputation and standardization,Handled by locked PPMI preprocessing pipeline,Derive independently in each cohort; flag implausible values
+part2_NP2PTOT,Motor experiences of daily living,primary predictor,numeric,MDS-UPDRS Part II points,PPMI-training median imputation and standardization,Handled by locked PPMI preprocessing pipeline,Use baseline Part II total
+part1_NP1RTOT,Non-motor experiences of daily living,primary predictor,numeric,MDS-UPDRS Part I points,PPMI-training median imputation and standardization,Handled by locked PPMI preprocessing pipeline,Use baseline Part I total
+moca_MCATOT,Global cognition,primary predictor,numeric,MoCA points,PPMI-training median imputation and standardization,Handled by locked PPMI preprocessing pipeline,Use baseline or prespecified closest baseline assessment
+baseline_NHY,Hoehn and Yahr stage,primary predictor,categorical,Hoehn and Yahr category,PPMI-training most-frequent imputation and one-hot encoding,Handled by locked PPMI preprocessing pipeline,Retain as categorical; ignore unseen external categories

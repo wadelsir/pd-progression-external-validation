@@ -1,0 +1,8 @@
+order,harmonized_predictor,clinical_definition,ppmi_source,pdbp_source,data_type,preprocessing,harmonization_rule
+1,ENROLL_AGE,Age at baseline,ENROLL_AGE,Demographic age at baseline,numeric,PPMI-training median imputation and standardization,Use age at the baseline assessment
+2,baseline_NP3TOT,Baseline motor severity,Baseline MDS-UPDRS Part III NP3TOT,Baseline harmonized MDS-UPDRS Part III total,numeric,PPMI-training median imputation and standardization,Select one baseline record using the predefined exam-state hierarchy
+3,derived_years_since_PD_diagnosis,Years since Parkinson's disease diagnosis,Baseline age minus age at diagnosis,Baseline age minus age at diagnosis,numeric,PPMI-training median imputation and standardization,Derive independently in each cohort; flag implausible values
+4,part2_NP2PTOT,Motor experiences of daily living,Baseline MDS-UPDRS Part II NP2PTOT,Baseline harmonized MDS-UPDRS Part II total,numeric,PPMI-training median imputation and standardization,Use baseline Part II total
+5,part1_NP1RTOT,Non-motor experiences of daily living,Baseline MDS-UPDRS Part I NP1RTOT,Baseline harmonized MDS-UPDRS Part I total,numeric,PPMI-training median imputation and standardization,Use baseline Part I total
+6,moca_MCATOT,Global cognition,Baseline MoCA MCATOT,Baseline harmonized MoCA total,numeric,PPMI-training median imputation and standardization,Use baseline or prespecified closest baseline assessment
+7,baseline_NHY,Hoehn and Yahr stage,Baseline NHY,H&Y stage aligned with the baseline Part III examination,categorical,PPMI-training most-frequent imputation and one-hot encoding,Retain as categorical; ignore unseen external categories

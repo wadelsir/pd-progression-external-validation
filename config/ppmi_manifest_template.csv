@@ -1,0 +1,8 @@
+data_domain,required,expected_file_pattern,participant_id_column,visit_column,required_variables,analytical_purpose,dataset_version,download_date,local_secure_path,notes
+Participant status,Yes,*Participant*Status*,PATNO,,PATNO; cohort/diagnosis status,Identify eligible Parkinson's disease participants,REPLACE,YYYY-MM-DD,REPLACE,Record the exact LONI-displayed version date
+MDS-UPDRS Part III,Yes,*MDS*UPDRS*Part*III*,PATNO,EVENT_ID,PATNO; EVENT_ID; NP3TOT; exam/medication state; assessment date,"Baseline predictor, duplicate resolution, and outcome construction",REPLACE,YYYY-MM-DD,REPLACE,Baseline and V06 required
+MDS-UPDRS Part II,Yes,*MDS*UPDRS*Part*II*,PATNO,EVENT_ID,PATNO; EVENT_ID; NP2PTOT,Baseline motor experiences of daily living,REPLACE,YYYY-MM-DD,REPLACE,
+MDS-UPDRS Part I,Yes,*MDS*UPDRS*Part*I*,PATNO,EVENT_ID,PATNO; EVENT_ID; NP1RTOT,Baseline non-motor experiences of daily living,REPLACE,YYYY-MM-DD,REPLACE,
+MoCA,Yes,*MoCA*,PATNO,EVENT_ID,PATNO; EVENT_ID; MCATOT,Baseline global cognition,REPLACE,YYYY-MM-DD,REPLACE,
+Demographics and diagnosis,Yes,*Demographic* OR *Diagnosis*,PATNO,,PATNO; ENROLL_AGE; age/date at diagnosis,Age and years since diagnosis,REPLACE,YYYY-MM-DD,REPLACE,Years since diagnosis = baseline age - age at diagnosis
+Hoehn and Yahr,Yes,*MDS*UPDRS*Part*III*,PATNO,EVENT_ID,PATNO; EVENT_ID; NHY,Baseline clinical disease stage,REPLACE,YYYY-MM-DD,REPLACE,Processed as categorical
