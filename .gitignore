@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Secrets and local configuration
+.env
+*.env
+config/analysis_config_local.yml
+
+# Controlled or participant-level data
+raw_data/
+data/raw/
+data/controlled/
+private_data/
+*.sas7bdat
+*.xpt
+*.parquet
+*.feather
+
+# Participant-level derived files and model artifacts
+results/participant_level/
+outputs/
+*.joblib
+*.pkl
+*.pickle
+
+# Keep only synthetic demonstration outputs
+results/aggregate_tables/*.csv
+!results/aggregate_tables/synthetic_demo_metrics.csv
+results/figures/*.png
+!results/figures/synthetic_demo_*.png
