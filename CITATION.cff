@@ -2,9 +2,18 @@ cff-version: 1.2.0
 message: "Please cite this software and the associated manuscript when using this repository."
 title: "PD Progression External Validation: Reproducible Analysis Repository"
 type: software
-version: 1.0.1
-date-released: 2026-07-27
+version: "1.0.1"
+date-released: "2026-07-26"
 doi: "10.5281/zenodo.21612129"
+
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21612128"
+    description: "Concept DOI representing all versions of this software."
+
+  - type: doi
+    value: "10.5281/zenodo.21612129"
+    description: "Version-specific DOI for release v1.0.1."
 authors:
   - family-names: "Elsir"
     given-names: "Mohamed"
